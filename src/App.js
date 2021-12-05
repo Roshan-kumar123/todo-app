@@ -15,7 +15,7 @@ function App() {
       .onSnapshot((snapshot) => {
         setTodos(
           snapshot.docs.map((doc) => {
-            return doc.data().todo;
+            return { id: doc.id, todo: doc.data().todo };
           })
         );
       });
@@ -34,7 +34,7 @@ function App() {
 
   return (
     <div className='App'>
-      <h1>Hello React</h1>
+      <h1>Hello React 🚀</h1>
       <form action=''>
         <FormControl>
           <InputLabel> ✅ Write a Todo</InputLabel>
