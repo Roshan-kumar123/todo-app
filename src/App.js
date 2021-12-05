@@ -47,7 +47,7 @@ function App() {
           type='submit'
           onClick={addTodo}
           variant='contained'
-          color='primary'
+          color='secondary'
           disabled={!input}
         >
           Add Todo
